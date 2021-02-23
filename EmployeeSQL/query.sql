@@ -50,6 +50,7 @@ ON p.dept_no = d.dept_no
 WHERE d.dept_name = 'Sales'
 OR d.dept_name = 'Development';
 
- 
-
-SELECT * FROM departments;
+-- Query for Question 8
+SELECT last_name, COUNT(last_name)
+FROM employees
+GROUP BY last_name;
