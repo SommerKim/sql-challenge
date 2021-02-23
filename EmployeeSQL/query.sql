@@ -31,4 +31,14 @@ FROM employees
 WHERE last_name LIKE 'B%'
 AND first_name = 'Hercules';
 
-SELECT * FROM employees;
+-- Query for Question 6
+SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
+FROM employees e
+JOIN dept_emp p
+ON e.emp_no = p.emp_no
+JOIN departments d
+ON p.dept_no = d.dept_no
+WHERE d.dept_name = 'Sales';
+ 
+
+SELECT * FROM departments;
