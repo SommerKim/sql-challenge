@@ -39,6 +39,17 @@ ON e.emp_no = p.emp_no
 JOIN departments d
 ON p.dept_no = d.dept_no
 WHERE d.dept_name = 'Sales';
+
+-- Query for Question 7
+SELECT e.emp_no, e.last_name, e.first_name, d.dept_name
+FROM employees e
+JOIN dept_emp p
+ON e.emp_no = p.emp_no
+JOIN departments d
+ON p.dept_no = d.dept_no
+WHERE d.dept_name = 'Sales'
+OR d.dept_name = 'Development';
+
  
 
 SELECT * FROM departments;
