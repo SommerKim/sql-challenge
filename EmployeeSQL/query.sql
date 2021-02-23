@@ -26,6 +26,9 @@ JOIN departments d
 ON p.dept_no = d.dept_no;
 
 -- Query for Question 5
-
+SELECT first_name, last_name, sex
+FROM employees
+WHERE last_name LIKE 'B%'
+AND first_name = 'Hercules';
 
 SELECT * FROM employees;
